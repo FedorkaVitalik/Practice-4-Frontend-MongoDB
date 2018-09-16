@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/public/main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container"> Відомість складання заліків та екзаменів студентами ДВНЗ УЖнУ</div>
+
+    </header>
+
+    <select id="facult"></select>
+
+    <select id="special"></select>
+
+    <select id="course">
+        <option value="1"> 1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+
+    <select id="subject"></select>
+
+    <button id="click">Click on me</button>
+    <table id="studentsList">
+        <thead>
+            <th>ПІБ студента</th>
+            <th>Оцінка</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+
+
+
+
+    </table>
+    <br>
+    <br>
+
+    <button id="retake">Retake</button>
+    <table id="losersList">
+        <thead id="losersHead">
+            <th>Студент</th>
+            <th>Предмет, з якого перездача</th>
+            <th>Факультет</th>
+            <th>Спеціальність</th>
+        </thead><br><br>
+        <tbody id="losersBody">
+
+
+        </tbody>
+
+    </table>
+    <br>
+    <br>
+    <br>
+
+    <input id="newStudent" type="text"><button id="addStud">ADD</button>
+    <br><br>
+
+    <button id="delStud">DELETE</button>
+    <table id="loseFacultLength">
+
+    </table>
+</body>
+
+<footer>
+    <br>
+    <br> &copy;ДВНЗ Ужгородський Національний Університет 2018
+</footer>
+
+</html>

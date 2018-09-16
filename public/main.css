@@ -1,0 +1,279 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-align: center;
+	background-image: url(/public/header-bg.jpg);
+}
+
+header {
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+	font-size: 30px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	color: white;
+	height: 50px;
+}
+
+thead {
+	color: white;
+}
+
+#studentsList {
+	margin: auto;
+	display: none;
+}
+
+#losersList {
+	margin: auto;
+}
+
+#losersHead th {
+	color: yellow;
+}
+
+#loseFacultLength {
+	color: white;
+}
+
+select#facult {
+	margin: 10px;
+	padding: 8px 15px;
+	background: #eecbdb;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 4px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+select#facult:hover {
+	cursor: pointer;
+	background: #fefa0a;
+}
+
+select#special {
+	margin: 10px;
+	padding: 8px 15px;
+	background: #eecbdb;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 4px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+select#special:hover {
+	cursor: pointer;
+	background: #fefa0a;
+}
+
+select#course {
+	margin: 10px;
+	padding: 8px 15px;
+	background: #eecbdb;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 4px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+select#course:hover {
+	cursor: pointer;
+	background: #fefa0a;
+}
+
+select#subject {
+	margin: 10px;
+	padding: 8px 15px;
+	background: #eecbdb;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 4px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+select#subject:hover {
+	cursor: pointer;
+	background: #fefa0a;
+}
+
+#tbody {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 60%;
+	color: white;
+}
+
+#losersBody {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 60%;
+	color: white;
+}
+
+#tbody tr {
+	margin: 0 3px 3px 3px;
+	padding: 0.4em;
+	padding-left: 1.5em;
+	font-size: 1.2em;
+	height: 18px;
+	font-style: italic;
+}
+
+#tbody tr {
+	cursor: all-scr;
+}
+
+.studMarks {
+	position: relative;
+	border-radius: 20px/60px;
+}
+
+#click {
+	display: inline-block;
+	margin: 10px;
+	overflow: visible;
+	padding: 8px 15px;
+	background: #b8ed01;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	transition: all 0.3s ease-out;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 2px rgba(0, 0, 0, 0.3), 0 0 4px 1px rgba(0, 0, 0, 0.2);
+	/* Font styles */
+	text-decoration: none;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.7);
+	box-shadow: inset 0 3px 2px rgba(255, 255, 255, .22), inset 0 -3px 2px rgba(0, 0, 0, .17),
+		inset 0 20px 10px rgba(255, 255, 255, .12), 0 0 4px 1px rgba(0, 0, 0, .1), 0 3px 2px rgba(0, 0, 0, .2);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+#click:hover {
+	background: #fefa0a;
+	cursor: pointer;
+	box-shadow: inset 0 -2px 1px rgba(255, 255, 255, 0.2), inset 0 3px 2px rgba(0, 0, 0, 0.12);
+}
+
+#retake {
+	display: inline-block;
+	margin: 10px;
+	overflow: visible;
+	padding: 8px 15px;
+	background: #b8ed01;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	transition: all 0.3s ease-out;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 2px rgba(0, 0, 0, 0.3), 0 0 4px 1px rgba(0, 0, 0, 0.2);
+	/* Font styles */
+	text-decoration: none;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.7);
+	box-shadow: inset 0 3px 2px rgba(255, 255, 255, .22), inset 0 -3px 2px rgba(0, 0, 0, .17),
+		inset 0 20px 10px rgba(255, 255, 255, .12), 0 0 4px 1px rgba(0, 0, 0, .1), 0 3px 2px rgba(0, 0, 0, .2);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+#retake:hover {
+	background: #fefa0a;
+	cursor: pointer;
+	box-shadow: inset 0 -2px 1px rgba(255, 255, 255, 0.2), inset 0 3px 2px rgba(0, 0, 0, 0.12);
+}
+
+footer {
+	color: aliceblue;
+}
+
+#delStud {
+	position: relative;
+	display: inline-block;
+	width: 10em;
+	height: 2.5em;
+	line-height: 2.5em;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px #777;
+	color: #fff;
+	outline: none;
+	border: 2px solid #F64C2B;
+	border-radius: 5px;
+	box-shadow: 0 0 0 60px rgba(0, 0, 0, 0) inset, .1em .1em .2em #800;
+	background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+}
+
+#delStud:hover {
+	cursor: pointer;
+	top: .1em;
+	left: .1em;
+	box-shadow: #EA1502
+}
+
+#delStud:active {
+	top: .1em;
+	left: .1em;
+	box-shadow: 0 0 0 60px rgba(0, 0, 0, .05) inset;
+}
+
+#addStud {
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	padding: .8em 1em calc(.8em + 3px);
+	border-radius: 3px;
+	background: rgb(64, 199, 129);
+	box-shadow: 0 -3px rgb(53, 167, 110) inset;
+	transition: 0.2s;
+}
+
+#addStud:hover {
+	background: rgb(53, 167, 110);
+	cursor: pointer;
+}
+
+#addStud:active {
+	background: rgb(33, 147, 90);
+	box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+button.deleteEachStud {
+	background: rgb(230, 60, 22);
+}
+
+button.deleteEachStud:hover {
+	background: #fefa0a;
+	color: #226fbe;
+}
+
+#newStudent {
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	background: #ffffff !important;
+	outline: none;
+	height: 24px;
+	width: 120px;
+	color: #cccccc;
+	font-size: 11px;
+	font-family: Tahoma
+}
+
+#newStudent:focus {
+	color: #000000;
+	border: 1px solid #000000
+}
