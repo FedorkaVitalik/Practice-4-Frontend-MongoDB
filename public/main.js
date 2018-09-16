@@ -64,7 +64,6 @@ $(function () {
 
 	$.getJSON(faculties, function (data) {
 		getGlobalData(data);
-		// loadStudents();
 	});
 
 	// функція, яка міняє колір залежно від значення селекта з оцінками (тобто залежно від опції даного селекта), та запам'ятовує це значення
@@ -165,16 +164,6 @@ $(function () {
 		console.log(data)
 		for (var student in data) {
 			addNoteRecord(student, data[student])
-			// let mark = data[student];
-			// var newTr = $('<tr/>');
-			// $(newTr).appendTo($('#tbody'));
-			// $('<td/>').addClass('stud').text(student).appendTo(newTr);
-
-			// // добавити вибір оцінки (Select) напроти кожного студента
-			// //Створюється копія створеного Select і вибирається збережена оцінка
-			// $newMarkSel = $markSel.clone().val(mark);
-			// $('<td/>').appendTo(newTr).append($newMarkSel);
-			// studMarkColor($newMarkSel);
 		}
 		studMarksEvents();
 	}
@@ -191,22 +180,6 @@ $(function () {
 
 		$.getJSON(getNoteURL, params, function (data) {
 			showNote(data)
-			// $('#tbody').empty();
-			// console.log(data)
-			// for (var student in data) {
-			// 	let mark = data[student];
-			// 	var newTr = $('<tr/>');
-			// 	$(newTr).appendTo($('#tbody'));
-			// 	$('<td/>').addClass('stud').text(student).appendTo(newTr);
-
-			// 	// добавити вибір оцінки (Select) напроти кожного студента
-			// 	//Створюється копія створеного Select і вибирається збережена оцінка
-			// 	$newMarkSel = $markSel.clone().val(mark);
-			// 	$('<td/>').appendTo(newTr).append($newMarkSel);
-			// 	studMarkColor($newMarkSel);
-			// }
-
-			// studMarksEvents();
 		});
 	}
 
@@ -231,8 +204,6 @@ $(function () {
 				newStudUrl,
 				params,
 				function (data) {
-					// showNote(data)
-					// $('#newStudent').val('');
 					if (data.result === true) {
 						addNoteRecord(params.newStud, null)
 						$('#newStudent').val('');
